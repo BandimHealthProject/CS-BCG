@@ -38,7 +38,7 @@ function initButtons() {
         });
     }
     // search
-    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:student") {
+    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:cbhp" | user == "username:fbhp" | user == "username:s1bhp" | user == "username:s3bhp" |user == "username:student") {
         ul.append($("<li />").append($("<button />").attr('id',"btnSearch").attr('class',"btnSearch").append("Busca")));
         
         var btnSup = $('#btnSearch')
