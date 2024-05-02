@@ -49,6 +49,18 @@ function loadPregnancies() {
         " WHERE REG = " + reg + " AND HCAREA = " + hcarea + " AND TAB = " + tab + " AND (_row_owner = 'username:oio05' OR _row_owner = 'username:oio12' OR _row_owner LIKE '%ajensen%' OR _row_owner LIKE '%jvedel%' OR _row_owner LIKE '%afisker%' OR _row_owner LIKE '%bhp%' OR _row_owner LIKE '%student%' OR _row_owner LIKE '%anonymous%' )" +
         " GROUP BY IDMUL HAVING MAX(VISNOMUL)" +
         " ORDER BY MOR, NOMEMUL";
+    } else if (user == "username:oio06" | user == "username:oio13" | user == "username:oio14") {
+        var sql = "SELECT _id, _savepoint_type, CHWREG, CICATRIZMUL, CONSENT, DATASEG, ESCO, ESCONIVEL, ESTADOGRAV, ESTADOMUL, GRAV, HCAREA, IDADE, IDMUL, MOR, NOMEMUL, NVNMAB, PARITY, PARHCHOSP, REG, REGDIA, TAB, TELE, VISNOMUL" +
+        " FROM PREGNANCIES" + 
+        " WHERE REG = " + reg + " AND HCAREA = " + hcarea + " AND TAB = " + tab + " AND (_row_owner = 'username:oio06' OR _row_owner = 'username:oio13' OR _row_owner = 'username:oio14' OR _row_owner LIKE '%ajensen%' OR _row_owner LIKE '%jvedel%' OR _row_owner LIKE '%afisker%' OR _row_owner LIKE '%bhp%' OR _row_owner LIKE '%student%' OR _row_owner LIKE '%anonymous%' )" +
+        " GROUP BY IDMUL HAVING MAX(VISNOMUL)" +
+        " ORDER BY MOR, NOMEMUL";
+    } else if (user == "username:oio08" | user == "username:oio15") {
+        var sql = "SELECT _id, _savepoint_type, CHWREG, CICATRIZMUL, CONSENT, DATASEG, ESCO, ESCONIVEL, ESTADOGRAV, ESTADOMUL, GRAV, HCAREA, IDADE, IDMUL, MOR, NOMEMUL, NVNMAB, PARITY, PARHCHOSP, REG, REGDIA, TAB, TELE, VISNOMUL" +
+        " FROM PREGNANCIES" + 
+        " WHERE REG = " + reg + " AND HCAREA = " + hcarea + " AND TAB = " + tab + " AND (_row_owner = 'username:oio08' OR _row_owner = 'username:oio15' OR _row_owner LIKE '%ajensen%' OR _row_owner LIKE '%jvedel%' OR _row_owner LIKE '%afisker%' OR _row_owner LIKE '%bhp%' OR _row_owner LIKE '%student%' OR _row_owner LIKE '%anonymous%' )" +
+        " GROUP BY IDMUL HAVING MAX(VISNOMUL)" +
+        " ORDER BY MOR, NOMEMUL";
     } else {
         var sql = "SELECT _id, _savepoint_type, CHWREG, CICATRIZMUL, CONSENT, DATASEG, ESCO, ESCONIVEL, ESTADOGRAV, ESTADOMUL, GRAV, HCAREA, IDADE, IDMUL, MOR, NOMEMUL, NVNMAB, PARITY, PARHCHOSP, REG, REGDIA, TAB, TELE, VISNOMUL" +
         " FROM PREGNANCIES" + 
