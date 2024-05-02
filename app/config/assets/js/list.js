@@ -126,6 +126,18 @@ function loadChildren() {
         " WHERE REG = " + reg + " AND HCAREA = " + hcarea + " AND TAB = " + tab + " AND (_row_owner = 'username:oio05' OR _row_owner = 'username:oio12' OR _row_owner LIKE '%ajensen%' OR _row_owner LIKE '%jvedel%' OR _row_owner LIKE '%afisker%' OR _row_owner LIKE '%bhp%' OR _row_owner LIKE '%student%' OR _row_owner LIKE '%anonymous%' )" +
         " GROUP BY IDCRI HAVING MAX(VISNOCRI)" +
         " ORDER BY MOR, NOMECRI";
+    } else if (user == "username:oio06" | user == "username:oio13" | user == "username:oio14") {
+        var sql = "SELECT _id, _row_owner, _savepoint_type, BCG, BCGDATA, DATASEG, DOB, ESTADOCRI, GRAV, HCAREA, IDCRI, IDMUL, MOR, NOMECRI, NOMEMUL, OUTRODATA, OUTROVAC, OUTROVACOU, POLIO, POLIODATA, REG, REGDIA, SEX, TAB, TELE, VISNOCRI" +
+        " FROM CHILDREN" + 
+        " WHERE REG = " + reg + " AND HCAREA = " + hcarea + " AND TAB = " + tab + " AND (_row_owner = 'username:oio06' OR _row_owner = 'username:oio13' OR _row_owner = 'username:oio14' OR _row_owner LIKE '%ajensen%' OR _row_owner LIKE '%jvedel%' OR _row_owner LIKE '%afisker%' OR _row_owner LIKE '%bhp%' OR _row_owner LIKE '%student%' OR _row_owner LIKE '%anonymous%' )" +
+        " GROUP BY IDCRI HAVING MAX(VISNOCRI)" +
+        " ORDER BY MOR, NOMECRI";
+    } else if (user == "username:oio08" | user == "username:oio15") {
+        var sql = "SELECT _id, _row_owner, _savepoint_type, BCG, BCGDATA, DATASEG, DOB, ESTADOCRI, GRAV, HCAREA, IDCRI, IDMUL, MOR, NOMECRI, NOMEMUL, OUTRODATA, OUTROVAC, OUTROVACOU, POLIO, POLIODATA, REG, REGDIA, SEX, TAB, TELE, VISNOCRI" +
+        " FROM CHILDREN" + 
+        " WHERE REG = " + reg + " AND HCAREA = " + hcarea + " AND TAB = " + tab + " AND (_row_owner = 'username:oio08' OR _row_owner = 'username:oio15' OR _row_owner LIKE '%ajensen%' OR _row_owner LIKE '%jvedel%' OR _row_owner LIKE '%afisker%' OR _row_owner LIKE '%bhp%' OR _row_owner LIKE '%student%' OR _row_owner LIKE '%anonymous%' )" +
+        " GROUP BY IDCRI HAVING MAX(VISNOCRI)" +
+        " ORDER BY MOR, NOMECRI";
     } else {
         var sql = "SELECT _id, _row_owner, _savepoint_type, BCG, BCGDATA, DATASEG, DOB, ESTADOCRI, GRAV, HCAREA, IDCRI, IDMUL, MOR, NOMECRI, NOMEMUL, OUTRODATA, OUTROVAC, OUTROVACOU, POLIO, POLIODATA, REG, REGDIA, SEX, TAB, TELE, VISNOCRI" +
         " FROM CHILDREN" + 
