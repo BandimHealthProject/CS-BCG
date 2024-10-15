@@ -29,7 +29,7 @@ function initButtons() {
     var user = odkCommon.getActiveUser();
     var ul = $('#li');
     console.log("user", user);
-    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:lbhp" | user == "username:abhp" | user == "username:cbhp" | user == "username:fbhp" | user == "username:s1bhp" | user == "username:s2bhp" | user == "username:s3bhp" | user == "username:student") {
+    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:lbhp" | user == "username:abhp" | user == "username:student" | user == "username:cbhp" | user == "username:fbhp" | user == "username:s1bhp" | user == "username:s2bhp" | user == "username:s3bhp") {
         ul.append($("<li />").append($("<button />").attr('id',"btnSup").attr('class',"btnSup").append("Supervisão")));
         
         var btnSup = $('#btnSup')
@@ -38,7 +38,7 @@ function initButtons() {
         });
     }
     // search
-    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:cbhp" | user == "username:fbhp" | user == "username:s1bhp" | user == "username:s3bhp" |user == "username:student") {
+    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:lbhp" | user == "username:abhp" | user == "username:student" | user == "username:cbhp" | user == "username:fbhp" | user == "username:s1bhp" | user == "username:s2bhp" | user == "username:s3bhp" | user == "username:bhp1" | user == "username:bhp2" | user == "username:bhp3" | user == "username:bhp4" | user == "username:bhp5" | user == "username:bhp6") {
         ul.append($("<li />").append($("<button />").attr('id',"btnSearch").attr('class',"btnSearch").append("Busca")));
         
         var btnSup = $('#btnSearch')
