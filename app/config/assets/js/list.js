@@ -31,7 +31,7 @@ function loadPregnancies() {
     // SQL to get pregnancies
     var user = odkCommon.getActiveUser();
     console.log("user:" + user);
-    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:lbhp" | user == "username:cbhp" | user == "username:abhp" | user == "username:fbhp" | user == "username:s1bhp" | user == "username:s2bhp" | user == "username:s3bhp" | user == "username:student") {
+    if (user == "username:ajensen" | user == "username:jvedel" | user == "username:afisker" | user == "username:ibhp" | user == "username:jbhp" | user == "username:lbhp" | user == "username:abhp" | user == "username:student" | user == "username:cbhp" | user == "username:fbhp" | user == "username:s1bhp" | user == "username:s2bhp" | user == "username:s3bhp" | user == "username:bhp1" | user == "username:bhp2" | user == "username:bhp3" | user == "username:bhp4" | user == "username:bhp5" | user == "username:bhp6") {
         var sql = "SELECT _id, _savepoint_type, CHWREG, CICATRIZMUL, CONSENT, DATASEG, ESCO, ESCONIVEL, ESTADOGRAV, ESTADOMUL, GRAV, HCAREA, IDADE, IDMUL, MOR, NOMEMUL, NVNMAB, PARITY, PARHCHOSP, REG, REGDIA, TAB, TELE, VISNOMUL" +
         " FROM PREGNANCIES" + 
         " WHERE REG = " + reg + " AND HCAREA = " + hcarea + " AND TAB = " + tab +
